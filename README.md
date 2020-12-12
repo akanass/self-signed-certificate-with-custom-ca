@@ -42,7 +42,7 @@ Double-click on `ca/rootCA-crt.pem` to insert it on your computer's `Keychain Ac
 
 Once the certificate has been inserted into your `Keychain Acces`, you still need to approve it:
 
-<img src="img/rootCA.png" alt="rootCA" />
+<img src="img/rootCA.png" alt="rootCA" width="200" />
 
 ## Create a certificate (Done for each server)
 
@@ -118,4 +118,8 @@ Now, you can use the `acme.domain` **crt** and **key**, or the **pkcs#12** file 
 
 After, go to `https://acme.domain` in your browser, and you will have a happy browser:
 
-<img src="img/browser.png" alt="browser" />
+<img src="img/browser.png" alt="browser" width="200" />
+
+<img src="img/ca-trusted.png" alt="browser" width="200" />
+
+<img src="img/crt-validate.png" alt="browser" width="200" />
