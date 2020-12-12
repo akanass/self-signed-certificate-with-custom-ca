@@ -43,7 +43,7 @@ $ openssl x509 -in ca/rootCA-crt.pem -text -noout
 
 ### Trust the Root CA's
 
-Double-click on `ca/rootCA-crt.pem` to insert it on your computer's `Keychain Acces`.
+Double-click on `ca/rootCA-crt.pem` to insert it in your computer's `Keychain Acces`.
 
 Once the certificate has been inserted into your `Keychain Acces`, you still need to approve it:
 
