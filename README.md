@@ -4,6 +4,11 @@ This project has been created to generate a self-signed certificate with a custo
 
 Follow all these steps, and you will have a happy browser with a lock in the address bar.
 
+```bash
+$ cd path/to/workspace
+$ git clone https://github.com/akanass/self-signed-certificate-with-custom-ca.git | git@github.com:akanass/self-signed-certificate-with-custom-ca.git
+```
+
 ## Create Root CA (Done once)
 
 Before launching the command, you have to update the `CA config` inside `ssl/cnf/ca.cnf` and change all elements between `{}`:
