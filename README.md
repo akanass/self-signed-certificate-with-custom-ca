@@ -91,7 +91,7 @@ $ cd ssl
 $ openssl x509 -req -in csr/{acme.domain}-csr.pem -CA ca/rootCA-crt.pem -CAkey ca/rootCA-key.pem -CAcreateserial -out {acme.domain}-crt.pem -days 365 -sha512 -extfile cnf/ssl.cnf -extensions v3_req
 ```
 
-## Verify the certificate's content
+### Verify the certificate's content
 
 ```bash
 $ cd ssl
@@ -105,7 +105,7 @@ $ cd ssl
 $ openssl pkcs12 -export -out {acme.domain}.p12 -inkey {acme.domain}-key.pem -in {acme.domain}-crt.pem -certfile ca/rootCA-crt.pem
 ```
 
-## Verify the PKCS#12 file
+### Verify the PKCS#12 file
 
 ```bash
 $ cd ssl
