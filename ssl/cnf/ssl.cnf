@@ -1,0 +1,28 @@
+[ req ]
+prompt                  = no
+default_bits		    = 4096
+default_keyfile 	    = {acme.domain}-key.pem
+default_md              = sha512
+encrypt_key             = no
+distinguished_name	    = req_distinguished_name
+req_extensions 			= v3_req
+string_mask             = utf8only
+utf8                    = yes
+
+[ req_distinguished_name ]
+C                       = {FR}
+ST                      = {ACME STATE}
+L                       = {ACME CITY}
+O                       = {ACME}
+CN                      = {acme.domain}
+
+[ v3_req ]
+basicConstraints        = CA:FALSE
+keyUsage                = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName          = @alt_names
+
+[alt_names]
+DNS.1                   = {acme.domain}
+IP.1                    = {192.168.x.x}
+IP.2                    = 0.0.0.0
+IP.3                    = 127.0.0.1
