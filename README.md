@@ -64,11 +64,12 @@ C   = {FR}
 ST  = {ACME STATE}
 L   = {ACME CITY}
 O   = {ACME}
-CN  = {acme.domain}
+CN  = *.{acme.domain}
 
 [alt_names]
-DNS.1 = {acme.domain}
-IP.1 = {192.168.x.x} # your local machine IP
+DNS.1 = {acme.domain} # to allow main domain
+DNS.2 = *.{acme.domain} # to allow sub-domains
+#IP.3 = {192.168.x.x} # if needed, uncomment to allow your local IP 
 ```
 
 **Attention:** All others elements don't have to be changed.
