@@ -14,15 +14,19 @@ C                       = {FR}
 ST                      = {ACME STATE}
 L                       = {ACME CITY}
 O                       = {ACME}
-CN                      = {acme.domain}
+CN                      = *.{acme.domain}
 
 [ v3_req ]
 basicConstraints        = CA:FALSE
+nsCertType              = server
+extendedKeyUsage        = serverAuth
 keyUsage                = nonRepudiation, digitalSignature, keyEncipherment
 subjectAltName          = @alt_names
 
 [alt_names]
 DNS.1                   = {acme.domain}
-IP.1                    = {192.168.x.x}
-IP.2                    = 0.0.0.0
-IP.3                    = 127.0.0.1
+DNS.2                   = *.{acme.domain}
+DNS.3                   = localhost
+IP.1                    = 0.0.0.0
+IP.2                    = 127.0.0.1
+#IP.3                    = {192.168.x.x}
